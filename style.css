@@ -1,0 +1,78 @@
+.clock
+{
+  width: 100px;
+  height: 100px;
+  background: #ffffffff;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  transform: rotate(180deg)scale(2);
+}
+.clock .godziny
+{
+    border: 2px solid black;
+    position: absolute;
+    height: 30%;
+    border-radius: 2px;
+    left: 47px;
+    top: 50%;
+    /* animation-duration: 43200s; */
+}
+.clock .minuty
+{
+    border: 1px solid black;
+    position: absolute;
+    height: 45%;
+    border-radius: 2px;
+    left: 48px;
+    top: 50%;
+    /* animation-duration: 3600s; */
+}
+.clock .sekundy
+{
+    border: 1px solid red;
+    position: absolute;
+    height: 45%;
+    border-radius: 2px;
+    left: 48px;
+    top: 50%;
+
+
+    /* animation-duration: 60s; */
+    transition-delay: 10s;
+}
+.koło
+{
+  width: 5px;
+  height: 5px;
+  background: black;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+.animatex
+{
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.hand
+{
+  transform-origin: top;
+}
+
+
+@keyframes rotate
+{
+  from
+{
+  transform: rotate(0deg);
+}
+to
+{
+  transform: rotate(360deg);
+}
+}
